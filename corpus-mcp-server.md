@@ -82,15 +82,11 @@ The server is configured via `.mcp.json` in the project root and runs as a stdio
     "corpus": {
       "command": "python",
       "args": ["server.py"],
-      "cwd": "c:/WORKSPACE/Cosmic.Summit.Book"
+      "cwd": "c:/[your-path-here]"
     }
   }
 }
 ```
-
-## What is NOT published
-
-The raw subtitle files, the book text files (Hancock and Sklyarov are copyrighted), the corpus database, and the server code are not included in this repository. Only the book itself and this description of the approach are published. The method is reproducible: any collection of text can be chunked, stored in SQLite with FTS5, and exposed through an MCP server using the same architecture.
 
 ## Reuse
 
