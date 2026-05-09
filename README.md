@@ -4,13 +4,17 @@ A snapshot of the alternative-theory landscape as it stood in Q1 2026: catastrop
 
 The editorial position is this: the mainstream record is less complete than its institutional presentation implies, and the alternative framework is less supported than its advocates believe. Both statements are true at the same time. The book does not tell you which side to pick.
 
+## Why "Almanac"
+
+An almanac is a dated snapshot, not a timeless reference. The corpus was assembled and the book was written in Q1 2026; both will go stale. Calling it an almanac commits to the shelf life. If the field is still active and worth re-surveying in 2027, a second edition will replace this one rather than amend it. If it is not, this volume stands as the snapshot it was meant to be. "Encyclopedia" or "compendium" would have overclaimed permanence; "almanac" is honest about the half-life.
+
 ## Why this exists
 
-I had some free time and wanted to catch up on what was going on in the alternative-theory field. Several names, concepts, sites, and pieces of tech that came up in recent Rogan episodes were unfamiliar to me, and the fastest way to close the gap was not to watch every podcast at 1x. It was to build a corpus and run searches against it.
+I had some free time and wanted to catch up on what was going on in the alternative-theory field. Several names, concepts, sites, and pieces of tech that came up in recent Rogan episodes were unfamiliar to me, and the fastest way to close the gap was not to watch every podcast at 1x. It was to build a corpus and run searches against it. I did this with AI's help specifically for myself, to catch up on a vast field without having to watch and read everything in it, which would have taken a lifetime. After reading what came out, I figured a handful of other people might find it useful, and put it here.
 
 ## How it was made
 
-I used my own subtitle scraper to pull the full back catalog from three channels, preserving each video's title, description, and publication date: **Cosmic Summit**, **Dedunking** (Dan Richards), and **Antropogenez**. To these I added book text from **Graham Hancock** (English) and **Andrey Sklyarov** (Russian), both of which I already had from another project: [Same Stones, Different Gods](https://github.com/vkorost/sklyarov-hancock-book).
+I used [YTubeFetch](https://github.com/vkorost/ytubefetch), my own free subtitle download app, to pull the full back catalog from three channels, preserving each video's title, description, and publication date: [**Cosmic Summit**](https://www.youtube.com/@cosmicsummit), [**Dedunking**](https://www.youtube.com/@DeDunking) (Dan Richards), and [**Antropogenez**](https://www.youtube.com/@AntropogenezRu). To these I added book text from [**Graham Hancock**](https://www.youtube.com/@grahamhancock) (English) and [**Andrey Sklyarov**](https://lah.ru/o-tsentre/sklyarov-a-yu/) (Russian), both of which I already had from another project: [Same Stones, Different Gods](https://github.com/vkorost/sklyarov-hancock-book).
 
 The result is a corpus of roughly 8.3 million words across 1,052 sources in English and Russian:
 
@@ -24,7 +28,7 @@ The result is a corpus of roughly 8.3 million words across 1,052 sources in Engl
 
 Eight million words is too much to read linearly. I had Claude build an MCP server that chunks the text, stores it in SQLite with FTS5 full-text indexing, and exposes search and retrieval as tools. Reference: [corpus-mcp-server.md](./corpus-mcp-server.md). I have since reused the same approach on other projects with comparable text loads.
 
-I picked Cosmic Summit as the most representative survey of which topics are alive in the field as of Q1 2026, and Claude and I derived the chapter structure from the themes that recur across that channel. For each theme, the relevant material from the other four sources was pulled in to add the rebuttals, the technical measurements, and the institutional pushback.
+The book itself was assembled with Claude using techniques partially described in [weekend-diy-book](https://github.com/vkorost/weekend-diy-book): style condensation, per-chapter assembly under explicit instructions, dedup, review, edit, revision, and final DOCX/PDF/EPUB generation, orchestrated as a multi-phase pipeline.
 
 ## The Five Angles
 
@@ -36,7 +40,7 @@ The book is organized around five voices, each occupying a distinct epistemic po
 - **Antropogenez** as the institutional-science rebuttal, in Russian. They replicate, they do field experiments, they publish their numbers. They have an obvious editorial position; that is fine and acknowledged.
 - **Cosmic Summit** as the annual gathering where citizen researchers, credentialed scientists, and catastrophists share a stage without anyone declaring the others illegitimate. The Cosmic Summit programs in the corpus are the index for which topics this book covers.
 
-Each voice has a position and each position has limits. The book does not tell you what to believe. It maps where the disputes are, who holds which position, and what evidence each side cites.
+Each voice has a position and each position has limits. The book maps where the disputes are, who holds which position, and what evidence each side cites.
 
 ## Structure
 
@@ -55,14 +59,14 @@ Chapters are self-contained and can be read in any order. `CONCEPTS.md` collects
 
 ## What's in this repo
 
-- `README.md` : this file.
-- `corpus-mcp-server.md` : description of the MCP approach used to make the corpus searchable during writing.
-- `book/chapters/` : the 36 chapters as individual Markdown files, interlinked with cross-references and endnote markers.
-- `book/alternative-theories-almanac-2026.pdf` : PDF for offline reading and print.
-- `book/alternative-theories-almanac-2026.epub` : EPUB for e-readers.
-- `book/CONCEPTS.md` : the named concepts introduced in each chapter.
-- `book/ENDNOTES.md` : sources referenced in each chapter.
-- `book/BIBLIOGRAPHY.md` : full bibliography.
+- `README.md`: this file.
+- `corpus-mcp-server.md`: description of the MCP approach used to make the corpus searchable during writing.
+- [`book/alternative-theories-almanac-2026.pdf`](./book/alternative-theories-almanac-2026.pdf): PDF for offline reading and print.
+- [`book/alternative-theories-almanac-2026.epub`](./book/alternative-theories-almanac-2026.epub): EPUB for e-readers.
+- `book/chapters/`: the 36 chapters as individual Markdown files, interlinked with cross-references and endnote markers.
+- `book/CONCEPTS.md`: the named concepts introduced in each chapter.
+- `book/ENDNOTES.md`: sources referenced in each chapter.
+- `book/BIBLIOGRAPHY.md`: full bibliography.
 
 The raw subtitles, the third-party books in the corpus (Hancock, Sklyarov), the corpus database itself, and the implementation of the MCP server and the assembly pipeline are not published. Only the book and the description of the approach are here.
 
@@ -72,11 +76,11 @@ Antropogenez and Sklyarov are Russian-language. The book's prose is in English. 
 
 ## Coverage cutoff
 
-The corpus was assembled in Q1 2026. Episodes, papers, and books published after that date are not reflected. The field is fluent and a lot has moved since. If you are reading this in late 2026 or after, treat the book as a snapshot, not as current.
+Episodes, papers, and books published after Q1 2026 are not reflected in the corpus. The field is fluent and a lot has moved since.
 
 ## AI assistance, scope of
 
-Claude was used for: corpus search and retrieval, prose generation in a defined voice, per-chapter assembly under explicit instructions, building the MCP server, generating the index. Not used for: independent fact-checking, source verification beyond what is in the corpus, or editorial decisions about which positions to include. Those were mine.
+Claude was used for corpus search and retrieval, prose generation in a defined voice, per-chapter assembly under explicit instructions, building the MCP server, and generating the index. Editorial decisions about which positions to include were mine. I did not do any independent fact-checking or source verification beyond what is already in the corpus.
 
 ## What's not in scope
 
@@ -90,6 +94,6 @@ I am not credentialed in archaeology, geology, genetics, or consciousness resear
 
 This repository is released under [Creative Commons Attribution-NonCommercial 4.0 International (CC-BY-NC-4.0)](https://creativecommons.org/licenses/by-nc/4.0/). You may read, share, quote, translate, and adapt the material with attribution for non-commercial purposes. Commercial reproduction requires permission.
 
-## Why share this
+---
 
-Books that cover this much ground from this many angles, in two languages, without picking a side, do not exist as far as I know. The book exists because the labor of reading hundreds of episodes and books across five channels in two languages defeats individual authors. I routed around that with infrastructure. After reading what came out, I decided to share it as is, in case the body of work is useful to anyone else.
+[![Alternative Theories Almanac Q1 2026 cover](./book/alternative-theories-almanac-cover.jpg)](./book/alternative-theories-almanac-2026.pdf)
