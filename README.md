@@ -4,7 +4,7 @@ A snapshot of the alternative-theory landscape as it stood in Q1 2026: catastrop
 
 The editorial position is this: the mainstream record is less complete than its institutional presentation implies, and the alternative framework is less supported than its advocates believe. Both statements are true at the same time. The book does not tell you which side to pick.
 
-Video overview of the project: [YouTube](https://www.youtube.com/watch?v=GkCB2OmYQjc)
+[Video overview of the project](https://www.youtube.com/watch?v=GkCB2OmYQjc)
 
 ## Why "Almanac"
 
