@@ -4,6 +4,8 @@ A snapshot of the alternative-theory landscape as it stood in Q1 2026: catastrop
 
 The editorial position is this: the mainstream record is less complete than its institutional presentation implies, and the alternative framework is less supported than its advocates believe. Both statements are true at the same time. The book does not tell you which side to pick.
 
+Video overview of the project: [YouTube](https://www.youtube.com/watch?v=GkCB2OmYQjc)
+
 ## Why "Almanac"
 
 An almanac is a dated snapshot, not a timeless reference. The corpus was assembled and the book was written in Q1 2026; both will go stale. Calling it an almanac commits to the shelf life. If the field is still active and worth re-surveying in 2027, a second edition will replace this one rather than amend it. If it is not, this volume stands as the snapshot it was meant to be. "Encyclopedia" or "compendium" would have overclaimed permanence; "almanac" is honest about the half-life.
