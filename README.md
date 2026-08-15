@@ -59,12 +59,19 @@ Each chapter introduces one named concept as a cognitive handle: **The Tolerance
 
 Chapters are self-contained and can be read in any order. `CONCEPTS.md` collects the named concepts introduced in each chapter.
 
+## Download
+
+- [**PDF**](https://github.com/vkorost/alternative-theories-almanac/releases/latest/download/alternative-theories-almanac-2026.pdf) - for offline reading and print.
+- [**EPUB**](https://github.com/vkorost/alternative-theories-almanac/releases/latest/download/alternative-theories-almanac-2026.epub) - for e-readers.
+
+Both are attached to the [latest release](https://github.com/vkorost/alternative-theories-almanac/releases/latest) and always point at the current revision. The book is corrected in place rather than re-versioned, so these links never go stale.
+
 ## What's in this repo
 
 - `README.md`: this file.
 - `corpus-mcp-server.md`: description of the MCP approach used to make the corpus searchable during writing.
-- [`book/alternative-theories-almanac-2026.pdf`](./book/alternative-theories-almanac-2026.pdf): PDF for offline reading and print.
-- [`book/alternative-theories-almanac-2026.epub`](./book/alternative-theories-almanac-2026.epub): EPUB for e-readers.
+- [`book/alternative-theories-almanac-2026.pdf`](https://github.com/vkorost/alternative-theories-almanac/releases/latest/download/alternative-theories-almanac-2026.pdf): PDF for offline reading and print.
+- [`book/alternative-theories-almanac-2026.epub`](https://github.com/vkorost/alternative-theories-almanac/releases/latest/download/alternative-theories-almanac-2026.epub): EPUB for e-readers.
 - `book/chapters/`: the 36 chapters as individual Markdown files, interlinked with cross-references and endnote markers.
 - `book/CONCEPTS.md`: the named concepts introduced in each chapter.
 - `book/ENDNOTES.md`: sources referenced in each chapter.
@@ -98,4 +105,4 @@ This repository is released under [Creative Commons Attribution-NonCommercial 4.
 
 ---
 
-[![Alternative Theories Almanac Q1 2026 cover](./book/alternative-theories-almanac-cover.jpg)](./book/alternative-theories-almanac-2026.pdf)
+[![Alternative Theories Almanac Q1 2026 cover](./book/alternative-theories-almanac-cover.jpg)](https://github.com/vkorost/alternative-theories-almanac/releases/latest/download/alternative-theories-almanac-2026.pdf)
